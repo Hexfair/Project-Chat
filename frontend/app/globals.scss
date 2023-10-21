@@ -1,0 +1,59 @@
+/* Обнуление */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+body {
+	max-width: 100vw;
+	height: 100vh;
+	font-family: 'publicSans', 'Arial', sans-serif;
+	background-color: var(--primary-light);
+	overflow: hidden;
+}
+
+input,
+textarea {
+	font-family: 'publicSans', 'Arial', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+/* Кастомная полоса прокрутки */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--grey-light);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--grey);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--grey-darken);
+}
+
+/* Colors */
+:root {
+	--grey-darken: #262626;
+	--grey-light: #8f9198;
+	--grey: #2e2e2e;
+	--primary: #7269ef;
+	--primary-dark: #5b24f3;
+	--primary-light: #d7d5f3;
+	--text-head: #e1e9f1;
+	--text-main: #abb4d2;
+	--white: white;
+	--red: #ef476f;
+	--green: #29c502;
+	--wine: rgba(239, 71, 111, 0.18);
+}

@@ -1,0 +1,54 @@
+.form {
+	width: 340px;
+	margin: 0 auto;
+
+	label {
+		color: var(--text-main) !important;
+		font-size: 15px !important;
+		font-weight: 500 !important;
+	}
+
+	.button {
+		background-color: transparent;
+		margin-left: 10px;
+		color: var(--text-head);
+		font-weight: 600;
+		text-decoration: underline;
+		cursor: pointer;
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			color: var(--primary);
+		}
+
+
+	}
+
+	.divider {
+		display: none;
+	}
+		
+	@media (max-width: 890px) {
+		width: 320px;
+	}
+
+	@media (max-width: 380px) {
+		width: 270px;
+
+		.divider {
+			display: block;
+		}
+	}
+}
+
+.title {
+	color: var(--text-head);
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+.subTitle {
+	color: var(--text-main);
+	font-size: 15px;
+	margin-bottom: 40px;
+}

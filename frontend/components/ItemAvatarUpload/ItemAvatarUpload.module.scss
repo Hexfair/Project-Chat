@@ -1,0 +1,71 @@
+.imageBox {
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.preview {
+		position: relative;
+		overflow: hidden;
+
+		&:hover {
+			.remove {
+				top: 0px;
+			}
+		}
+
+		.image {
+			width: 70px;
+			height: 70px;
+			margin-bottom: 15px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 8px;
+		}
+
+		.remove {
+			position: absolute;
+			top: -100%;
+			left: 0px;
+			width: 70px;
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 2;
+			border-radius: 8px;
+			color: var(--grey-darken);
+			background-color: var(--primary-light);
+			opacity: 0.85;
+			transition: all 0.25s ease 0s;
+
+
+			svg {
+				cursor: pointer;
+				font-size: 20px;
+			}
+		}
+	}
+
+
+
+	.upload {
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		background-color: var(--grey-light);
+		border: 1px dashed var(--white);
+		border-radius: 8px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: var(--white);
+
+		p:nth-child(2) {
+			font-size: 11px;
+		}
+	}
+}

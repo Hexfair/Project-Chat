@@ -1,0 +1,92 @@
+.modal {
+	overflow: hidden;
+
+	.imagesBox {
+		display: flex;
+		overflow-x: scroll;
+		max-width: 450px;
+		height: 150px;
+		padding: 5px;
+
+		.image {
+			position: relative;
+
+			img {
+				height: 120px;
+				object-fit: contain;
+				margin-right: 15px;
+			}
+
+			.remove {
+				position: absolute;
+				top: -100%;
+				left: 0px;
+				width: 30px;
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 2;
+				border-radius: 8px;
+				color: var(--white);
+				transition: all 0.25s ease 0s;
+
+				svg {
+					cursor: pointer;
+					font-size: 20px;
+				}
+			}
+
+			&:hover {
+				img {
+					filter: brightness(45%);
+				}
+
+				.remove {
+					top: 0px;
+				}
+			}
+		}
+	}
+
+	.okButton {
+		background-color: var(--primary);
+
+		&:hover {
+			background-color: var(--primary-light);
+			color: var(--grey-darken);
+		}
+	}
+}
+
+
+.buttonImage {
+	background-color: transparent;
+	cursor: pointer;
+
+	svg {
+		width: 25px;
+		height: 25px;
+		color: var(--primary-light);
+		transition: all 0.15s ease 0s;
+
+		@media (max-width: 1024px) {
+			width: 22px;
+			height: 22px;
+		}
+
+		@media (max-width: 768px) {
+			width: 18px;
+			height: 18px;
+		}
+
+		@media (max-width: 425px) {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&:hover svg {
+		color: var(--primary);
+	}
+}

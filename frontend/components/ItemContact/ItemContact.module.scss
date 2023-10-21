@@ -1,0 +1,136 @@
+.item {
+	display: grid;
+	grid-template-columns: 40px 1fr 50px;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"PartnerAvatar PartnerName LastMessageTime"
+		"PartnerAvatar LastMessage CountMessages";
+	gap: 2px 10px;
+	padding: 10px 16px;
+	transition: all 0.3s ease 0s;
+	height: 62px;
+	cursor: pointer;
+
+	&.selected {
+		background-color: var(--grey);
+	}
+
+	&:hover {
+		background-color: var(--grey);
+	}
+
+	&.find {
+		grid-template-columns: 40px 1fr;
+		grid-template-areas:
+			"PartnerAvatar PartnerName"
+			"PartnerAvatar LastMessage";
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--grey);
+		}
+	}
+
+	@media (max-width: 425px) {
+		height: 56px;
+	}
+}
+
+.partnerAvatar {
+	grid-area: PartnerAvatar;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	img {
+		border-radius: 8px;
+	}
+
+	.online {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: var(--green);
+		border: 2px solid var(--white);
+	}
+}
+
+.partnerName {
+	grid-area: PartnerName;
+	font-size: 16px;
+	color: var(--text-head);
+	text-align: left;
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 425px) {
+		font-size: 14px;
+	}
+}
+
+.lastMessage {
+	grid-area: LastMessage;
+	font-size: 13px;
+	color: var(--text-main);
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 250px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 425px) {
+		font-size: 12px;
+	}
+}
+
+.lastMessageTime {
+	grid-area: LastMessageTime;
+	color: var(--text-main);
+	font-size: 12px;
+	text-align: right;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+	@media (max-width: 425px) {
+		font-size: 11px;
+	}
+}
+
+.countMessages {
+	grid-area: CountMessages;
+	height: 20px;
+	width: 20px;
+	font-size: 9px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	border-radius: 50%;
+	color: var(--red);
+	background-color: var(--wine);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-self: right;
+
+	@media (max-width: 425px) {
+		height: 18px;
+		width: 18px;
+		font-size: 8px;
+	}
+}
+
+.typing {
+	color: var(--primary);
+	font-style: italic;
+
+	svg {
+		fill: var(--primary);
+	}
+}

@@ -1,0 +1,31 @@
+.ant-form-item-explain-error {
+	font-size: 12px;
+}
+
+.login-form-button {
+	background-color: var(--primary);
+	margin-right: 10px;
+
+	&:disabled {
+		background-color: var(--primary-light);
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 15px;
+	}
+}
+
+.ant-form-item-control-input-content {
+	color: var(--text-main);
+}
+
+.ant-form-item-control-input-content a {
+	margin-left: 6px;
+	color: var(--text-head);
+	font-weight: 600;
+	text-decoration: underline;
+
+	&:hover {
+		color: var(--primary);
+	}
+}

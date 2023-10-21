@@ -1,0 +1,25 @@
+.dialogColumn {
+	background-image: url("../../public/bg-dark-4827.png");
+	background-repeat: repeat;
+	display: grid;
+	grid-template-rows: 75px 1fr 75px;
+	height: 100vh;
+	position: relative;
+	padding: 0px 20px;
+}
+
+.empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	.emptyText {
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: var(--primary-light);
+		margin-bottom: 30px;
+	}
+}

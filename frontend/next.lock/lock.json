@@ -1,0 +1,11 @@
+{
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/decoder.js": { "integrity": "sha512-N5wmF2Ai4hctCUlmiW7usmmzPgrfqeD/zvXehplbGQjaAmYJ6x0effOql/OXjPb7+sNFKI/NkuC6DU9pucAa8w==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/draggable.js": { "integrity": "sha512-yB1MpLxgLj1+e8590xwoasoll3QIJETEin6OavlEiI1buXoqjxYw/1BhkxpDKi7pvmPHo7qWQn0wHY4uUxrs6g==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/event-emitter.js": { "integrity": "sha512-B+6i35EySHZ49l0vGdbLF1SVhqdZ0GpjJpEsXgdrB/dj3Jf0SwfFCO36NpGy1yHr8Wswb9Xx+D3tJ12rnpsCcQ==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/fetcher.js": { "integrity": "sha512-dtwl9PNZ1F7Nzd2l8zoBUMvu4t48yCiFTYVYmNULiH5p/GfR9zjGu7eqUmkDBwZFWt83eHuwOYZiMbcQKtZX9g==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/player.js": { "integrity": "sha512-qSXFSplM9uJkaV4LlYu5w5GRDfAXEyrnQfDbbEQ6JCDWG7+60uuet/oZeDXsmcUM90H46RJsyxwqBh1G+km3pg==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/renderer.js": { "integrity": "sha512-wvLoOZ1kjftyRYUW0DKwkZaEwoKvwbUuPC+shylLpASMfhVy1S1yPu+BvzH1nqAwc2iD3cfoYVV89LcIIsYSpw==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/timer.js": { "integrity": "sha512-cRnWnHBuOrlfUxPYieCpQrQC8j/M597hIaNJ2wE9qrTMc3NGt0Z0KfQ+cPQwO4pWu8Xdo6g/CMg/CYJCsEIMvA==", "contentType": "application/javascript; charset=utf-8" },
+  "https://unpkg.com/wavesurfer.js@beta": { "resolved": "https://unpkg.com/wavesurfer.js@7.0.0-beta.15/dist/wavesurfer.js", "integrity": "sha512-R3lXS0NHvZ01Au7duBH+hHRkEQAOMzn4XDB3oClhUMGvZUOQTcvAEzMbgXnJzB7N4S/fqusZLkQaXrpL0d0qTg==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}

@@ -1,0 +1,65 @@
+.page {
+	display: grid;
+	grid-template-columns: 75px 350px 1fr;
+	grid-template-areas: 'ColumnNavbar ColumnInfo ColumnDialog';
+	position: relative;
+	transition: all 0.3s linear 0s;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 70px 300px 1fr;
+	}
+
+	@media (max-width:890px) {
+		grid-template-columns: 60px 280px 1fr;
+	}
+
+	@media (max-width:768px) {
+		position: relative;
+		grid-template-columns: 60px 1fr;
+		grid-template-areas: 'ColumnNavbar ColumnDialog';
+	}
+
+	@media (max-width: 425px) {
+		grid-template-columns: 50px 1fr;
+
+		&.noVisible {
+			grid-template-columns: 0px 1fr;
+			grid-template-areas: 'ColumnNavbar ColumnDialog';
+
+			.button {
+				left: -8px;
+			}
+		}
+	}
+
+	.button {
+		display: none;
+
+		@media (max-width: 425px) {
+			display: block;
+			width: 33px;
+			position: absolute;
+			top: calc(50% - 15px);
+			left: 42px;
+			z-index: 2;
+			transition: all 0.3s linear 0s;
+
+			svg {
+				fill: var(--grey);
+				stroke: var(--primary-light);
+				width: 30px;
+			}
+		}
+	}
+}
+
+.spin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	span i {
+		background-color: var(--primary) !important;
+	}
+}

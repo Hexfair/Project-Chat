@@ -1,0 +1,33 @@
+.content {
+	padding: 20px 30px 30px 30px;
+	height: calc(100vh - 150px);
+	overflow-y: scroll;
+
+	@media (max-width: 768px) {
+		padding: 20px 15px 30px 15px;
+	}
+
+	@media (max-width: 425px) {
+		padding: 20px 5px 30px 5px;
+	}
+}
+
+.hiddenBlock {
+	height: 80px;
+}
+
+.moreButton {
+	text-align: center;
+
+	button {
+		background-color: var(--primary-light);
+		color: var(--grey-darken);
+		transition: all 0.2s;
+		margin: 0px auto 20px auto;
+	}
+
+	button:hover {
+		background-color: var(--primary) !important;
+		color: var(--white);
+	}
+}

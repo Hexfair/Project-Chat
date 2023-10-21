@@ -1,0 +1,30 @@
+.buttonSend {
+	background-color: transparent;
+	cursor: pointer;
+
+	svg {
+		width: 25px;
+		height: 25px;
+		color: var(--primary-light);
+		transition: all 0.15s ease 0s;
+
+		@media (max-width: 1024px) {
+			width: 22px;
+			height: 22px;
+		}
+
+		@media (max-width: 768px) {
+			width: 18px;
+			height: 18px;
+		}
+
+		@media (max-width: 425px) {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&:hover svg {
+		color: var(--primary);
+	}
+}

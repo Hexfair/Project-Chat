@@ -1,0 +1,21 @@
+.colorAvatar {
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--grey-darken);
+	font-size: 17px;
+	font-weight: 600;
+	width: 40px;
+	height: 40px;
+	
+	@media (max-width: 425px) {
+		width: 35px;
+		height: 35px;
+		font-size: 15px;
+	}
+
+	&.circle {
+		border-radius: 50%;
+	}
+}

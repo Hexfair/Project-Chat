@@ -1,0 +1,91 @@
+.container {
+	background-color: var(--grey-darken);
+	padding: 20px 10px 10px 10px;
+	position: absolute;
+	min-height: 100vh;
+	width: 0%;
+	z-index: -1;
+
+	@media (max-width: 1024px) {
+		padding: 20px 3px 10px 3px;
+	}
+
+	.title {
+		color: var(--text-head);
+		font-size: 20px;
+		padding-left: 20px;
+		margin-bottom: 10px;
+		letter-spacing: 1px;
+
+		@media (max-width: 1024px) {
+			font-size: 18px;
+		}
+
+		@media (max-width: 890px) {
+			font-size: 16px;
+		}
+	}
+
+	.email {
+		color: var(--grey-light);
+		font-size: 17px;
+		padding-left: 20px;
+		margin-bottom: 50px;
+		font-style: italic;
+
+		@media (max-width: 1024px) {
+			font-size: 16px;
+		}
+
+		@media (max-width: 890px) {
+			font-size: 15px;
+		}
+	}
+
+	form {
+		width: 250px;
+		margin: 0 auto;
+
+		label {
+			color: var(--text-main) !important;
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		textarea {
+			resize: vertical;
+			max-height: 250px;
+		}
+
+		button {
+			background-color: var(--primary-light);
+			color: var(--grey-darken);
+			transition: all 0.2s;
+		}
+
+		button:hover {
+			background-color: var(--primary) !important;
+			color: var(--white);
+		}
+	}
+
+	.button {
+		display: block;
+		padding: 6px 14px;
+		width: 70%;
+		border-radius: 8px;
+		margin: 80px auto 0px auto;
+		font-size: 14px;
+		line-height: 18px;
+		color: var(--white) !important;
+		transition: all 0.2s ease 0s;
+		background-color: var(--red);
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--primary-dark);
+			border: none;
+			color: var(--white) !important;
+		}
+	}
+}
